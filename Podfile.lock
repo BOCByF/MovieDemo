@@ -1,0 +1,16 @@
+PODS:
+  - JDropDownAlert (1.3.0)
+
+DEPENDENCIES:
+  - JDropDownAlert
+
+SPEC REPOS:
+  trunk:
+    - JDropDownAlert
+
+SPEC CHECKSUMS:
+  JDropDownAlert: fd2aec99b685cb35530283b34f36c7cb46d44170
+
+PODFILE CHECKSUM: 757de9274505ffc1f9715fce4b02607718a0f5b7
+
+COCOAPODS: 1.12.1
