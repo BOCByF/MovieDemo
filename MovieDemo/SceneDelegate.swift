@@ -19,7 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     // TODO: remove before release
     var isOffline = false
-    var isMock = true
+    var isMock = false
     
     lazy var dependencyInjection: DependencyInjection? = {
         guard let defaultPresenter = homeNavController else { return nil }

@@ -68,7 +68,6 @@ class DependencyInjection {
     }
     
     func getDataSource() -> DataSourceInterface {
-        
         var network = self.isOffline ? nil : networkAccess
         network = self.isMock ? mockAccess : network
         

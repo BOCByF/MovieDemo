@@ -65,7 +65,7 @@ class MovieListLogicController: BaseLogicControllerProtocol {
             }
             self.cachedMovieItems = movieList
             self.viewModel?.translate(searchLabel: query, movieItems: movieList)
-            refresh(with: self.viewModel)
+            self.refresh(with: self.viewModel)
         })
     }
     

@@ -32,6 +32,7 @@ class MovieDetailsViewController: UIViewController, BaseViewControllerProtocol {
         super.viewDidLoad()
         SceneDelegate.shared?.dependencyInjection?.bind(viewController: self)
         
+        // Add shadow layer
         let shadowGradientLayer = CAGradientLayer()
         shadowGradientLayer.frame = shadowView.bounds
         shadowGradientLayer.colors = [UIColor.clear.cgColor, UIColor.black.cgColor]

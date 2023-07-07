@@ -7,6 +7,8 @@
 
 import Foundation
 
+typealias MovieListCompletion = ([MovieItem], String?) -> Void
+
 class CoreDataAccess {
     func fetchMovieList() -> [MovieItem] {
         let movieList = [MovieItem]()
@@ -19,19 +21,93 @@ class CoreDataAccess {
     }
 }
 
-typealias MovieListCompletion = ([MovieItem], String?) -> Void
-
 class NetworkAccess {
-    func fetchMovieList(query: String, _ completion: MovieListCompletion) {
-        let movieList = [MovieItem]()
-        // TODO: Append movie items
+    static let imageHost = "https://image.tmdb.org/t/p/w500"
+    static let apiHost = "https://api.themoviedb.org/3"
+    static let fixedParams = "include_adult=false&language=en-US"
+    static let authToken = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJmYjg4NTI1OWQzYTNmYmFjMWEyMDU2ODVjYTkyNzFkMiIsInN1YiI6IjY0YTRjMTEzMWJmMjY2MDBjNzg5YmUxNCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.FQJiaJYn3UuchSPVfqqsah6DY1u3aMKjgUKKrtiOMwE"
+    static let sharedSession = URLSession(configuration: .default)
+    
+    func fetchMovieList(query: String, page: Int, _ completion: @escaping MovieListCompletion) {
+        var movieList = [MovieItem]()
+        if let request = buildUrlRequest(query: query, page: page) {
+            NetworkAccess.sharedSession.dataTask(with: request) { data, response, error in
+                if let error = error {
+                    completion(movieList, nil)
+                    UniversalErrorHandler.shared.handle(error.localizedDescription)
+                }
+                if let data = data {
+                    let parsedMovieItems = self.parseMovieItems(data: data)
+                    movieList.append(contentsOf: parsedMovieItems)
+                    completion(movieList, nil)
+                }
+            }.resume()
+        }
         completion(movieList, nil)
     }
 }
 
-class MockAccess: NetworkAccess {
-    static let imageHost = "https://image.tmdb.org/t/p/w500"
+extension NetworkAccess {
+    enum APIPath: String {
+        case search = "/search/movie"
+    }
     
+    enum APIParam: String {
+        case page = "page"
+        case query = "query"
+    }
+    
+    func buildUrlRequest(query: String, page: Int) -> URLRequest? {
+        let params = buildMovieSearchAPIParams(query: query, page: page)
+        let urlString = "\(NetworkAccess.apiHost)\(NetworkAccess.APIPath.search.rawValue)?\(params)"
+        let bearerAuth = "Bearer \(NetworkAccess.authToken)"
+        
+        if let url = URL(string: urlString) {
+            var request = URLRequest(url: url)
+            request.httpMethod = "GET"
+            request.addValue(bearerAuth, forHTTPHeaderField: "Authorization")
+            request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+            return request
+        }
+        return nil
+    }
+    
+    func buildMovieSearchAPIParams(query: String, page: Int) -> String {
+        let urlAllowed: CharacterSet =
+            .alphanumerics.union(.init(charactersIn: "-._~"))
+        let queryComponents: [String] = [APIParam.query.rawValue, query.addingPercentEncoding(withAllowedCharacters: urlAllowed) ?? ""]
+        let queryParam = queryComponents.joined(separator: "=")
+        
+        let pageParam = [APIParam.page.rawValue, "\(page)"].joined(separator: "=")
+        
+        return [NetworkAccess.fixedParams, queryParam, pageParam].joined(separator: "&")
+    }
+    
+    func parseMovieItems(data: Data) -> [MovieItem] {
+        var movieList = [MovieItem]()
+        if let jsonDict = try? JSONSerialization.jsonObject(with: data) as? [String: Any],
+            let resultList = jsonDict["results"] as? [[String: Any]] {
+            resultList.forEach { item in
+                let fetchTimestamp = Date().timeIntervalSince1970.rounded()
+                if let id = item["id"] as? Int,
+                   let title = item["original_title"] as? String,
+                   let releaseDate = item["release_date"] as? String,
+                   let posterPath = item["poster_path"] as? String,
+                   let voteAverage = item["vote_average"] as? Double,
+                   let voteCount = item["vote_count"] as? Int,
+                   let overview = item["overview"] as? String
+                {
+                    let posterUrlString = "\(NetworkAccess.imageHost)\(posterPath)"
+                    let voteAverage = voteAverage.rounded()
+                    movieList.append(MovieItem(id: id, title: title, fetchTimestamp: fetchTimestamp, releaseDate: releaseDate, posterUrlString: posterUrlString, voteAverage: voteAverage, voteCount: voteCount, overview: overview))
+                }
+            }
+        }
+        return movieList
+    }
+}
+
+class MockAccess: NetworkAccess {
     enum MockFile: String {
         case searchJohnP1 = "search_john_p1"
     }
@@ -39,31 +115,14 @@ class MockAccess: NetworkAccess {
     func fetchMock(with filename: String) -> [MovieItem] {
         var movieList = [MovieItem]()
         if let url = Bundle.main.url(forResource: filename, withExtension: "json"),
-           let data = try? Data(contentsOf: url),
-           let jsonDict = try? JSONSerialization.jsonObject(with: data) as? [String: Any] {
-            if let resultList = jsonDict["results"] as? [[String: Any]] {
-                resultList.forEach { item in
-                    let fetchTimestamp = Date().timeIntervalSince1970.rounded()
-                    if let id = item["id"] as? Int,
-                       let title = item["original_title"] as? String,
-                       let releaseDate = item["release_date"] as? String,
-                       let posterPath = item["poster_path"] as? String,
-                       let voteAverage = item["vote_average"] as? Double,
-                       let voteCount = item["vote_count"] as? Int,
-                       let overview = item["overview"] as? String
-                    {
-                        let posterUrlString = "\(MockAccess.imageHost)\(posterPath)"
-                        let voteAverage = voteAverage.rounded()
-                        movieList.append(MovieItem(id: id, title: title, fetchTimestamp: fetchTimestamp, releaseDate: releaseDate, posterUrlString: posterUrlString, voteAverage: voteAverage, voteCount: voteCount, overview: overview))
-                    }
-                }
-            }
+           let data = try? Data(contentsOf: url) {
+            let parsedMovieItems = parseMovieItems(data: data)
+            movieList.append(contentsOf: parsedMovieItems)
         }
-        
         return movieList
     }
     
-    override func fetchMovieList(query: String, _ completion: MovieListCompletion) {
+    override func fetchMovieList(query: String, page: Int, _ completion: @escaping MovieListCompletion) {
         let mockList = fetchMock(with: MockFile.searchJohnP1.rawValue)
         completion(mockList, nil)
     }
@@ -118,16 +177,16 @@ class DataSourceImp: DataSourceInterface {
     ///         - completion with cache
     ///
     ///
-    func fetchMovies(query: String, page: Int, _ completion: MovieListCompletion) {
+    func fetchMovies(query: String, page: Int, _ completion: @escaping MovieListCompletion) {
         let cachedList = fetchMovie(query: query)
         if isCacheExpired(cachedList), let networkSource = networkSource {
-            networkSource.fetchMovieList(query: query) { list, errorMessage in
+            networkSource.fetchMovieList(query: query, page: page) { list, errorMessage in
                 if let errorMessage = errorMessage {
                     completion(cachedList, errorMessage)
                 } else {    // new data fetched from remote
-                    mergeCache(with: list)
-                    refreshPersistentStore(with: self.cachedMovieList)
-                    let refreshedCachedList = fetchMovie(query: query)
+                    self.mergeCache(with: list)
+                    self.refreshPersistentStore(with: self.cachedMovieList)
+                    let refreshedCachedList = self.fetchMovie(query: query)
                     completion(refreshedCachedList, nil)
                 }
             }
