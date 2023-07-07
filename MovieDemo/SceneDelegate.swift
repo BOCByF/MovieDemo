@@ -17,6 +17,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         return window?.rootViewController as? HomeNavController
     }
     
+    // TODO: remove before release
+    var isOffline = false
+    var isMock = true
+    
     lazy var dependencyInjection: DependencyInjection? = {
         guard let defaultPresenter = homeNavController else { return nil }
         return createDependencyInjection(defaultPresenter)
@@ -29,8 +33,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let _ = (scene as? UIWindowScene) else { return }
         SceneDelegate.shared = self
         
-        // TODO: remove before release
-        _ = dependencyInjection?.toggleDatasource(isOffline: false, isMock: true)
+        _ = dependencyInjection?.toggleDatasource(isOffline: isOffline, isMock: isMock)
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

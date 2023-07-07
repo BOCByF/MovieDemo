@@ -20,8 +20,8 @@ class MovieListViewModel {
     var searchLabel: String = ""
     var cellModels = [MovieListCellModel]()
     
-    func translate(searchLabel: String?, movieItems: [MovieItem]) {
-        self.searchLabel = searchLabel ?? self.searchLabel
+    func translate(searchLabel: String, movieItems: [MovieItem]) {
+        self.searchLabel = searchLabel
         
         cellModels = movieItems.map { item in
             let imageUrl = URL(string: item.posterUrlString)
@@ -32,22 +32,27 @@ class MovieListViewModel {
     }
 }
 
+enum MovieListNavigationInfo {
+    case showDetails(String, Int)
+}
+
 class MovieListLogicController: BaseLogicControllerProtocol {
-    typealias VC = MovieListViewController
-    typealias VM = MovieListViewModel
-    
     var viewModel: MovieListViewModel?
     var viewController: MovieListViewController?
     var dataSource: DataSourceInterface?
+    
+    var cachedMovieItems = [MovieItem]()
     
     required init(viewModel: MovieListViewModel, viewController: MovieListViewController, dataSource: DataSourceInterface) {
         self.viewModel = viewModel
         self.viewController = viewController
         self.dataSource = dataSource
+        
+        initData()
     }
     
     func initData() {
-        self.viewModel?.translate(searchLabel: nil, movieItems: [MovieItem]())
+        self.viewModel?.translate(searchLabel: "", movieItems: [MovieItem]())
         refresh(with: self.viewModel)
     }
     
@@ -57,11 +62,16 @@ class MovieListLogicController: BaseLogicControllerProtocol {
         dataSource?.fetchMovies(query: query, page: page, { movieList, error in
             if let error = error {
                 UniversalErrorHandler.shared.handle(error)
-            } else {
-                self.viewModel?.translate(searchLabel: query, movieItems: movieList)
-                refresh(with: self.viewModel)
             }
+            self.cachedMovieItems = movieList
+            self.viewModel?.translate(searchLabel: query, movieItems: movieList)
+            refresh(with: self.viewModel)
         })
+    }
+    
+    func selectItem(index: Int) {
+        let item = self.cachedMovieItems[index]
+        self.viewController?.navigate(info:.showDetails("segue_show_details", item.id))
     }
     
     func refresh(with viewModel: MovieListViewModel?) {

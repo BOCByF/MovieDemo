@@ -49,11 +49,12 @@ class MockAccess: NetworkAccess {
                        let releaseDate = item["release_date"] as? String,
                        let posterPath = item["poster_path"] as? String,
                        let voteAverage = item["vote_average"] as? Double,
-                       let voteCount = item["vote_count"] as? Int
+                       let voteCount = item["vote_count"] as? Int,
+                       let overview = item["overview"] as? String
                     {
                         let posterUrlString = "\(MockAccess.imageHost)\(posterPath)"
                         let voteAverage = voteAverage.rounded()
-                        movieList.append(MovieItem(id: id, title: title, fetchTimestamp: fetchTimestamp, releaseDate: releaseDate, posterUrlString: posterUrlString, voteAverage: voteAverage, voteCount: voteCount))
+                        movieList.append(MovieItem(id: id, title: title, fetchTimestamp: fetchTimestamp, releaseDate: releaseDate, posterUrlString: posterUrlString, voteAverage: voteAverage, voteCount: voteCount, overview: overview))
                     }
                 }
             }
@@ -89,6 +90,12 @@ class DataSourceImp: DataSourceInterface {
     // Used by settings.offlineMode
     func toggleRemoteAccess(with remote: NetworkAccess?) {
         networkSource = remote
+    }
+    
+    func fetchMovie(id: Int) -> [MovieItem] {
+        return cachedMovieList.filter { item in
+            item.id == id
+        }
     }
     
     func fetchMovie(query: String) -> [MovieItem] {

@@ -43,14 +43,28 @@ class DependencyInjection {
                     
                     viewController.bind(logicController: logicController)
                 }
+            case is MovieDetailsViewController:
+                if let viewController = viewController as? MovieDetailsViewController {
+                    let dataSource = getDataSource()
+                    let viewModel = MovieDetailsViewModel()
+                    let logicController = MovieDetailsLogicController(viewModel: viewModel, viewController: viewController, dataSource: dataSource)
+                    
+                    viewController.bind(logicController: logicController)
+                }
             default:
                 return
         }
     }
     
-    func toggleDatasource(isOffline: Bool, isMock: Bool) {
-        self.isOffline = isOffline
-        self.isMock = isMock
+    func toggleDatasource(isOffline: Bool? = nil, isMock: Bool? = nil) {
+        if let isOffline = isOffline {
+            self.isOffline = isOffline
+        }
+        if let isMock = isMock {
+            self.isMock = isMock
+        }
+        // Commit change
+        _ = getDataSource()
     }
     
     func getDataSource() -> DataSourceInterface {
@@ -59,7 +73,7 @@ class DependencyInjection {
         network = self.isMock ? mockAccess : network
         
         if let dataSourceImp = self.dataSource {
-            self.dataSource?.toggleRemoteAccess(with: network)
+            dataSourceImp.toggleRemoteAccess(with: network)
             return dataSourceImp
         } else {
             let dataSourceImp = DataSourceImp(restore: coreDataAccess, network: network)

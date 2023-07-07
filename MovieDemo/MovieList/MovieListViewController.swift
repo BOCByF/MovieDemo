@@ -41,6 +41,8 @@ class MovieListViewController: UIViewController, BaseViewControllerProtocol {
     var logicController: MovieListLogicController?
     var viewModel: MovieListViewModel?
     
+    var navigationInfo: MovieListNavigationInfo? = nil
+    
     func bind(logicController: MovieListLogicController) {
         self.logicController = logicController
     }
@@ -54,7 +56,25 @@ class MovieListViewController: UIViewController, BaseViewControllerProtocol {
         super.viewWillAppear(animated)
         searchBar.delegate = self
         
-        self.logicController?.initData()
+    }
+    
+    func navigate(info: MovieListNavigationInfo) {
+        navigationInfo = info
+        switch info {
+            case .showDetails(let segueId, _):
+                performSegue(withIdentifier: segueId, sender: nil)
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let navigationInfo = navigationInfo else { return }
+        switch navigationInfo {
+            case .showDetails(let segueId, let itemId):
+                if segue.identifier == segueId,
+                   let destination = segue.destination as? MovieDetailsViewController {
+                    destination.presetItemId = itemId
+                }
+        }
     }
     
     func refreshView(with viewModel: MovieListViewModel) {
@@ -92,3 +112,26 @@ extension MovieListViewController: UITableViewDataSource {
     }
     
 }
+
+extension MovieListViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        logicController?.selectItem(index: indexPath.row)
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
