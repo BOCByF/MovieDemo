@@ -6,14 +6,14 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>02845717-DCE3-4724-995B-45D3A0520CD7</key>
+		<key>1F59933E-E959-4843-97D5-411AB86443AD</key>
 		<dict>
 			<key>auxiliaryLogUniqueIdentifier</key>
-			<string>5C630CA9-3749-42FA-AA3F-6A5528064CD5</string>
+			<string>C430DE24-B5EA-4E55-94E3-38E6F6802A46</string>
 			<key>auxiliaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
-				<string>E</string>
+				<string>S</string>
 			</dict>
 			<key>className</key>
 			<string>IDESchemeActionsInvocationRecord</string>
@@ -22,7 +22,7 @@
 			<key>domainType</key>
 			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
 			<key>fileName</key>
-			<string>Run-MovieDemo-2023.07.06_09-30-49-+1000.xcresult</string>
+			<string>Run-MovieDemo-2023.07.07_19-12-23-+1000.xcresult</string>
 			<key>hasAuxiliaryLog</key>
 			<true/>
 			<key>hasConsoleLog</key>
@@ -32,7 +32,7 @@
 			<key>primaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
-				<string>E</string>
+				<string>S</string>
 			</dict>
 			<key>schemeIdentifier-containerName</key>
 			<string>MovieDemo project</string>
@@ -43,18 +43,18 @@
 			<key>signature</key>
 			<string>Run MovieDemo</string>
 			<key>timeStartedRecording</key>
-			<real>710292649.90602601</real>
+			<real>710413943.37805903</real>
 			<key>timeStoppedRecording</key>
 			<real>0.0</real>
 			<key>title</key>
 			<string>Run MovieDemo</string>
 			<key>uniqueIdentifier</key>
-			<string>02845717-DCE3-4724-995B-45D3A0520CD7</string>
+			<string>1F59933E-E959-4843-97D5-411AB86443AD</string>
 		</dict>
-		<key>46D8827D-45DB-4759-AC34-3340C0DC7EF9</key>
+		<key>20FB34CD-5F05-497B-A7AA-957D7D0D8BC7</key>
 		<dict>
 			<key>auxiliaryLogUniqueIdentifier</key>
-			<string>75D9C2BE-6E0C-4087-8DFC-AC47A7F9CAED</string>
+			<string>CABD8FB2-690C-47F1-B7B2-6C26975BBF0F</string>
 			<key>auxiliaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
@@ -67,7 +67,7 @@
 			<key>domainType</key>
 			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
 			<key>fileName</key>
-			<string>Run-MovieDemo-2023.07.06_15-18-27-+1000.xcresult</string>
+			<string>Run-MovieDemo-2023.07.07_19-11-51-+1000.xcresult</string>
 			<key>hasAuxiliaryLog</key>
 			<true/>
 			<key>hasConsoleLog</key>
@@ -88,13 +88,1228 @@
 			<key>signature</key>
 			<string>Run MovieDemo</string>
 			<key>timeStartedRecording</key>
-			<real>710313507.97641897</real>
+			<real>710413911.17985904</real>
 			<key>timeStoppedRecording</key>
 			<real>0.0</real>
 			<key>title</key>
 			<string>Run MovieDemo</string>
 			<key>uniqueIdentifier</key>
-			<string>46D8827D-45DB-4759-AC34-3340C0DC7EF9</string>
+			<string>20FB34CD-5F05-497B-A7AA-957D7D0D8BC7</string>
+		</dict>
+		<key>2348A2D2-A9CA-4F0C-93F7-9C042FA06E6A</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>D92AC5F6-5B0D-4E70-AB18-952B99E25D42</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-MovieDemo-2023.07.07_18-02-08-+1000.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MovieDemo project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MovieDemo</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run MovieDemo</string>
+			<key>timeStartedRecording</key>
+			<real>710409728.47507298</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run MovieDemo</string>
+			<key>uniqueIdentifier</key>
+			<string>2348A2D2-A9CA-4F0C-93F7-9C042FA06E6A</string>
+		</dict>
+		<key>32DC7A09-CBC9-4012-9F3E-7C7AEB0F1B1D</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>04C6012A-4DCB-4F3B-B37C-4E957E9A3882</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-MovieDemo-2023.07.07_18-20-13-+1000.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MovieDemo project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MovieDemo</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run MovieDemo</string>
+			<key>timeStartedRecording</key>
+			<real>710410813.52983701</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run MovieDemo</string>
+			<key>uniqueIdentifier</key>
+			<string>32DC7A09-CBC9-4012-9F3E-7C7AEB0F1B1D</string>
+		</dict>
+		<key>358154BB-8DE5-4E37-BBC1-20257E4D163E</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>725B61B5-6A9C-4897-AF06-65FCCA8A8DFC</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-MovieDemo-2023.07.07_17-58-50-+1000.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MovieDemo project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MovieDemo</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run MovieDemo</string>
+			<key>timeStartedRecording</key>
+			<real>710409530.58043897</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run MovieDemo</string>
+			<key>uniqueIdentifier</key>
+			<string>358154BB-8DE5-4E37-BBC1-20257E4D163E</string>
+		</dict>
+		<key>4A9689F0-76CF-4289-BDEC-53F396B09A1E</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>0F8E688B-1FA5-4059-9C29-26370AC1ECD0</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-MovieDemo-2023.07.07_19-09-11-+1000.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MovieDemo project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MovieDemo</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run MovieDemo</string>
+			<key>timeStartedRecording</key>
+			<real>710413751.70613003</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run MovieDemo</string>
+			<key>uniqueIdentifier</key>
+			<string>4A9689F0-76CF-4289-BDEC-53F396B09A1E</string>
+		</dict>
+		<key>53DB5A88-B691-48E6-8E0E-A1AC2BA4F41C</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>09EB866B-5468-4200-9455-CABEBCD71F4E</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-MovieDemo-2023.07.07_18-23-34-+1000.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MovieDemo project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MovieDemo</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run MovieDemo</string>
+			<key>timeStartedRecording</key>
+			<real>710411014.10510695</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run MovieDemo</string>
+			<key>uniqueIdentifier</key>
+			<string>53DB5A88-B691-48E6-8E0E-A1AC2BA4F41C</string>
+		</dict>
+		<key>552AB14C-EC5C-442E-9401-8A5918F8BB1C</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>AAB5E4EB-2206-424F-BC97-9F535127BA35</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-MovieDemo-2023.07.07_17-57-54-+1000.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MovieDemo project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MovieDemo</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run MovieDemo</string>
+			<key>timeStartedRecording</key>
+			<real>710409474.282686</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run MovieDemo</string>
+			<key>uniqueIdentifier</key>
+			<string>552AB14C-EC5C-442E-9401-8A5918F8BB1C</string>
+		</dict>
+		<key>5C532DCB-EB59-44A1-9F3B-B776BA2F8B69</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>0BC3F50A-6CC6-469A-8C21-3051E9471419</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-MovieDemo-2023.07.07_18-03-04-+1000.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MovieDemo project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MovieDemo</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run MovieDemo</string>
+			<key>timeStartedRecording</key>
+			<real>710409784.73448396</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run MovieDemo</string>
+			<key>uniqueIdentifier</key>
+			<string>5C532DCB-EB59-44A1-9F3B-B776BA2F8B69</string>
+		</dict>
+		<key>66934287-C89B-4894-9865-78E83BCC9B5B</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>84B47E4B-D38C-4F77-A4CC-82CDC2D656E4</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-MovieDemo-2023.07.07_17-59-41-+1000.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MovieDemo project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MovieDemo</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run MovieDemo</string>
+			<key>timeStartedRecording</key>
+			<real>710409581.13761699</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run MovieDemo</string>
+			<key>uniqueIdentifier</key>
+			<string>66934287-C89B-4894-9865-78E83BCC9B5B</string>
+		</dict>
+		<key>6F4661CA-775A-4FF0-91A5-BC6B9378F3D7</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>09028791-A1F5-46A8-AAB3-D6C5EF52C2A8</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-MovieDemo-2023.07.07_17-57-00-+1000.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MovieDemo project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MovieDemo</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run MovieDemo</string>
+			<key>timeStartedRecording</key>
+			<real>710409420.75582004</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run MovieDemo</string>
+			<key>uniqueIdentifier</key>
+			<string>6F4661CA-775A-4FF0-91A5-BC6B9378F3D7</string>
+		</dict>
+		<key>73B5933A-C244-4DD8-BAE9-45BCE093ADDC</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>69031E1F-C910-4202-A279-84F6B1B26CEB</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-MovieDemo-2023.07.07_19-16-43-+1000.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MovieDemo project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MovieDemo</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run MovieDemo</string>
+			<key>timeStartedRecording</key>
+			<real>710414203.816432</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run MovieDemo</string>
+			<key>uniqueIdentifier</key>
+			<string>73B5933A-C244-4DD8-BAE9-45BCE093ADDC</string>
+		</dict>
+		<key>7F177840-F526-43DC-96CD-D30AEE57C95B</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>C50B102F-D204-4C5C-8B5F-3FEA2983635A</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-MovieDemo-2023.07.07_18-26-27-+1000.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MovieDemo project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MovieDemo</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run MovieDemo</string>
+			<key>timeStartedRecording</key>
+			<real>710411187.29828501</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run MovieDemo</string>
+			<key>uniqueIdentifier</key>
+			<string>7F177840-F526-43DC-96CD-D30AEE57C95B</string>
+		</dict>
+		<key>89FCA7EC-9648-45C1-ADD2-41B15913F95F</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>E155E00F-072C-4FDD-A942-420008D9ACC3</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-MovieDemo-2023.07.07_18-00-28-+1000.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MovieDemo project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MovieDemo</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run MovieDemo</string>
+			<key>timeStartedRecording</key>
+			<real>710409628.42717302</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run MovieDemo</string>
+			<key>uniqueIdentifier</key>
+			<string>89FCA7EC-9648-45C1-ADD2-41B15913F95F</string>
+		</dict>
+		<key>96034C2D-4988-4909-B89D-D77AF82F3954</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>229F0DE6-250A-46CF-A041-64EAF19EF175</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-MovieDemo-2023.07.07_18-04-38-+1000.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MovieDemo project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MovieDemo</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run MovieDemo</string>
+			<key>timeStartedRecording</key>
+			<real>710409878.27166605</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run MovieDemo</string>
+			<key>uniqueIdentifier</key>
+			<string>96034C2D-4988-4909-B89D-D77AF82F3954</string>
+		</dict>
+		<key>9A165915-DDFE-4557-B9B2-2498109AF02C</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>30B6DF7E-0FAC-49E0-B33E-2D7BDF6FACB9</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-MovieDemo-2023.07.07_18-21-05-+1000.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MovieDemo project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MovieDemo</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run MovieDemo</string>
+			<key>timeStartedRecording</key>
+			<real>710410865.22939003</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run MovieDemo</string>
+			<key>uniqueIdentifier</key>
+			<string>9A165915-DDFE-4557-B9B2-2498109AF02C</string>
+		</dict>
+		<key>A511AD1E-96B8-45F7-AF35-BA0110B0FB0A</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>9389062E-4F6F-463D-85CF-2A1ECD532C3B</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-MovieDemo-2023.07.07_18-33-00-+1000.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MovieDemo project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MovieDemo</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run MovieDemo</string>
+			<key>timeStartedRecording</key>
+			<real>710411580.69404399</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run MovieDemo</string>
+			<key>uniqueIdentifier</key>
+			<string>A511AD1E-96B8-45F7-AF35-BA0110B0FB0A</string>
+		</dict>
+		<key>A692166B-D11C-496B-808F-398B28653F1E</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>1819B593-A6A4-4EC0-B9A7-A110D7BB37B3</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-MovieDemo-2023.07.07_18-07-10-+1000.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MovieDemo project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MovieDemo</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run MovieDemo</string>
+			<key>timeStartedRecording</key>
+			<real>710410030.91332102</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run MovieDemo</string>
+			<key>uniqueIdentifier</key>
+			<string>A692166B-D11C-496B-808F-398B28653F1E</string>
+		</dict>
+		<key>AD8F18EC-FF78-4C26-A95D-07480AA3EF0C</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>413AB914-D3F3-4F71-9EE2-72E47C8A0B32</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-MovieDemo-2023.07.07_18-31-47-+1000.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MovieDemo project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MovieDemo</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run MovieDemo</string>
+			<key>timeStartedRecording</key>
+			<real>710411507.41786206</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run MovieDemo</string>
+			<key>uniqueIdentifier</key>
+			<string>AD8F18EC-FF78-4C26-A95D-07480AA3EF0C</string>
+		</dict>
+		<key>B2D2B769-4577-4ED9-8B83-C0CA99CA9739</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>46C957C8-2716-4401-BE07-2EC98437CE43</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-MovieDemo-2023.07.07_18-02-20-+1000.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MovieDemo project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MovieDemo</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run MovieDemo</string>
+			<key>timeStartedRecording</key>
+			<real>710409740.12251902</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run MovieDemo</string>
+			<key>uniqueIdentifier</key>
+			<string>B2D2B769-4577-4ED9-8B83-C0CA99CA9739</string>
+		</dict>
+		<key>B371EC28-1F06-4374-B779-8CA81A492B60</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>D42AC42F-CA21-4551-85AB-60AD1580DA40</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-MovieDemo-2023.07.07_19-33-58-+1000.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MovieDemo project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MovieDemo</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run MovieDemo</string>
+			<key>timeStartedRecording</key>
+			<real>710415238.92721605</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run MovieDemo</string>
+			<key>uniqueIdentifier</key>
+			<string>B371EC28-1F06-4374-B779-8CA81A492B60</string>
+		</dict>
+		<key>BA1FCC48-F47C-40D5-93DD-C217CD512D45</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>516B096A-F8F1-4DED-84DB-BEC9C63DA728</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-MovieDemo-2023.07.07_18-33-48-+1000.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MovieDemo project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MovieDemo</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run MovieDemo</string>
+			<key>timeStartedRecording</key>
+			<real>710411628.10704303</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run MovieDemo</string>
+			<key>uniqueIdentifier</key>
+			<string>BA1FCC48-F47C-40D5-93DD-C217CD512D45</string>
+		</dict>
+		<key>C95CFEBF-6CD6-44A8-BD76-E072AFFEB26B</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>FD561DAE-0445-4257-8985-077474EAB022</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-MovieDemo-2023.07.07_18-25-11-+1000.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MovieDemo project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MovieDemo</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run MovieDemo</string>
+			<key>timeStartedRecording</key>
+			<real>710411111.41854203</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run MovieDemo</string>
+			<key>uniqueIdentifier</key>
+			<string>C95CFEBF-6CD6-44A8-BD76-E072AFFEB26B</string>
+		</dict>
+		<key>CC8DA525-55BC-4C1C-A25E-ABE5C94EC18D</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>43DBC555-D2DD-460F-AD15-57D744389496</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-MovieDemo-2023.07.07_12-57-39-+1000.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MovieDemo project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MovieDemo</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run MovieDemo</string>
+			<key>timeStartedRecording</key>
+			<real>710391459.81442702</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run MovieDemo</string>
+			<key>uniqueIdentifier</key>
+			<string>CC8DA525-55BC-4C1C-A25E-ABE5C94EC18D</string>
+		</dict>
+		<key>D7C7611A-000F-446C-B02E-F910DAA8BA28</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>58E5ACAD-1AA7-437F-8765-92FC02E9F928</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-MovieDemo-2023.07.07_18-30-23-+1000.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MovieDemo project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MovieDemo</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run MovieDemo</string>
+			<key>timeStartedRecording</key>
+			<real>710411423.51914799</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run MovieDemo</string>
+			<key>uniqueIdentifier</key>
+			<string>D7C7611A-000F-446C-B02E-F910DAA8BA28</string>
+		</dict>
+		<key>DDB49337-C925-4140-8F13-BC986E0538B9</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>A674C7EC-69F5-4C79-AB4A-A2802F05B8DF</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-MovieDemo-2023.07.07_19-17-03-+1000.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MovieDemo project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MovieDemo</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run MovieDemo</string>
+			<key>timeStartedRecording</key>
+			<real>710414223.27984202</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run MovieDemo</string>
+			<key>uniqueIdentifier</key>
+			<string>DDB49337-C925-4140-8F13-BC986E0538B9</string>
+		</dict>
+		<key>E071EC51-6C9C-4B24-BA97-064155264E96</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>C3C0739F-2A48-46D5-813E-233A60FAEA5C</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-MovieDemo-2023.07.07_18-02-29-+1000.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MovieDemo project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MovieDemo</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run MovieDemo</string>
+			<key>timeStartedRecording</key>
+			<real>710409749.72565997</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run MovieDemo</string>
+			<key>uniqueIdentifier</key>
+			<string>E071EC51-6C9C-4B24-BA97-064155264E96</string>
+		</dict>
+		<key>EFFBBAD3-2C54-4458-B707-D509F14EC517</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>2FC8F111-E3B1-4BBD-9437-E760FFC26BE5</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-MovieDemo-2023.07.07_18-04-01-+1000.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MovieDemo project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MovieDemo</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run MovieDemo</string>
+			<key>timeStartedRecording</key>
+			<real>710409841.00562596</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run MovieDemo</string>
+			<key>uniqueIdentifier</key>
+			<string>EFFBBAD3-2C54-4458-B707-D509F14EC517</string>
+		</dict>
+		<key>F2624D36-B54B-43FC-9E6A-991C5A15D3CB</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>927C5056-D18B-4154-BCBC-5967744EE5F5</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-MovieDemo-2023.07.07_19-12-56-+1000.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MovieDemo project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MovieDemo</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run MovieDemo</string>
+			<key>timeStartedRecording</key>
+			<real>710413976.68701994</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run MovieDemo</string>
+			<key>uniqueIdentifier</key>
+			<string>F2624D36-B54B-43FC-9E6A-991C5A15D3CB</string>
 		</dict>
 	</dict>
 </dict>

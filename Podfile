@@ -9,6 +9,7 @@ target 'MovieDemo' do
 
   # Pods for MovieDemo
   pod 'Toast-Swift', '~> 5.0.1'
+  pod 'SDWebImage', '~> 5.0'
 
   target 'MovieDemoTests' do
     inherit! :search_paths

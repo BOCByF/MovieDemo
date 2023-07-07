@@ -12,8 +12,13 @@ import Foundation
 struct MovieItem {
     let id: Int
     let title: String
-    let timestamp: Double
+    let fetchTimestamp: Double
+    let releaseDate: String
+    let posterUrlString: String
+    let voteAverage: Double
+    let voteCount: Int
 }
+
 
 protocol DataSourceInterface {
     func toggleRemoteAccess(with remote: NetworkAccess?)

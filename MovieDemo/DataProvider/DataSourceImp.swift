@@ -30,6 +30,8 @@ class NetworkAccess {
 }
 
 class MockAccess: NetworkAccess {
+    static let imageHost = "https://image.tmdb.org/t/p/w500"
+    
     enum MockFile: String {
         case searchJohnP1 = "search_john_p1"
     }
@@ -41,9 +43,17 @@ class MockAccess: NetworkAccess {
            let jsonDict = try? JSONSerialization.jsonObject(with: data) as? [String: Any] {
             if let resultList = jsonDict["results"] as? [[String: Any]] {
                 resultList.forEach { item in
+                    let fetchTimestamp = Date().timeIntervalSince1970.rounded()
                     if let id = item["id"] as? Int,
-                       let title = item["original_title"] as? String {
-                        movieList.append(MovieItem(id: id, title: title, timestamp: Date().timeIntervalSince1970.rounded()))
+                       let title = item["original_title"] as? String,
+                       let releaseDate = item["release_date"] as? String,
+                       let posterPath = item["poster_path"] as? String,
+                       let voteAverage = item["vote_average"] as? Double,
+                       let voteCount = item["vote_count"] as? Int
+                    {
+                        let posterUrlString = "\(MockAccess.imageHost)\(posterPath)"
+                        let voteAverage = voteAverage.rounded()
+                        movieList.append(MovieItem(id: id, title: title, fetchTimestamp: fetchTimestamp, releaseDate: releaseDate, posterUrlString: posterUrlString, voteAverage: voteAverage, voteCount: voteCount))
                     }
                 }
             }
@@ -127,7 +137,7 @@ class DataSourceImp: DataSourceInterface {
     ///
     private func isCacheExpired(_ cacheList: [MovieItem]) -> Bool {
         if let first = cacheList.first {
-            let timeDifference = Date().timeIntervalSince1970 - first.timestamp
+            let timeDifference = Date().timeIntervalSince1970 - first.fetchTimestamp
             return timeDifference > DataSourceImp.cacheExpiryThreshhold
         }
         return true // No data, need refresh

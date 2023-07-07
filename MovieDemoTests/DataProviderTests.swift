@@ -13,7 +13,8 @@ final class DataProviderTests: XCTestCase {
     var dataSource: DataSourceInterface? = nil
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
-        dataSource = SceneDelegate.shared?.dependencyInjection?.getDataSource(isOffline: false, isMock: true)
+        SceneDelegate.shared?.dependencyInjection?.toggleDatasource(isOffline: false, isMock: true)
+        dataSource = SceneDelegate.shared?.dependencyInjection?.getDataSource()
     }
 
     override func tearDownWithError() throws {

@@ -13,8 +13,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     var window: UIWindow?
     
+    var homeNavController: HomeNavController? {
+        return window?.rootViewController as? HomeNavController
+    }
+    
     lazy var dependencyInjection: DependencyInjection? = {
-        guard let defaultPresenter = self.window?.rootViewController else { return nil }
+        guard let defaultPresenter = homeNavController else { return nil }
         return createDependencyInjection(defaultPresenter)
     }()
 
@@ -24,6 +28,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
         SceneDelegate.shared = self
+        
+        // TODO: remove before release
+        _ = dependencyInjection?.toggleDatasource(isOffline: false, isMock: true)
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
