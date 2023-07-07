@@ -8,11 +8,41 @@
 import Foundation
 import UIKit
 
+extension SceneDelegate {
+    func createDependencyInjection(_ defaultPresenter: UIViewController) -> DependencyInjection {
+        return DependencyInjection(defaultPresenter: defaultPresenter)
+    }
+}
+
 class DependencyInjection {
-    static let shared: DependencyInjection = DependencyInjection()
     
+    private let coreDataAccess: CoreDataAccess
+    private let networkAccess: NetworkAccess
+    private let mockAccess: MockAccess
+    private var dataSource: DataSourceInterface?
     
-    private init() {}
+    fileprivate init(defaultPresenter: UIViewController) {
+        UniversalLink.shared.defaultPresenter = defaultPresenter
+        UniversalErrorHandler.shared.defaultPresenter = defaultPresenter
+        
+        coreDataAccess = CoreDataAccess()
+        networkAccess = NetworkAccess()
+        mockAccess = MockAccess()
+    }
+    
+    func getDataSource(isOffline: Bool, isMock: Bool = false) -> DataSourceInterface {
+        var network = isOffline ? nil : networkAccess
+        network = isMock ? mockAccess : network
+        
+        if let dataSourceImp = self.dataSource {
+            self.dataSource?.toggleRemoteAccess(with: network)
+            return dataSourceImp
+        } else {
+            let dataSourceImp = DataSourceImp(restore: coreDataAccess, network: network)
+            self.dataSource = dataSourceImp
+            return dataSourceImp
+        }
+    }
     
 }
 

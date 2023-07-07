@@ -1,16 +1,16 @@
 PODS:
-  - JDropDownAlert (1.3.0)
+  - Toast-Swift (5.0.1)
 
 DEPENDENCIES:
-  - JDropDownAlert
+  - Toast-Swift (~> 5.0.1)
 
 SPEC REPOS:
   trunk:
-    - JDropDownAlert
+    - Toast-Swift
 
 SPEC CHECKSUMS:
-  JDropDownAlert: fd2aec99b685cb35530283b34f36c7cb46d44170
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
 
-PODFILE CHECKSUM: 757de9274505ffc1f9715fce4b02607718a0f5b7
+PODFILE CHECKSUM: ec1a42e1315e5a179773664bb101619491b39d99
 
 COCOAPODS: 1.12.1

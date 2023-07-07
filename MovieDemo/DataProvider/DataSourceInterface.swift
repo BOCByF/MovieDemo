@@ -6,15 +6,18 @@
 //
 
 import Foundation
+//import Math
 
 // Mock
 struct MovieItem {
+    let id: Int
     let title: String
-    let timestamp: String
+    let timestamp: Double
 }
 
 protocol DataSourceInterface {
-    func fetchMovie(query: String) -> MovieItem?
-    func fetchMovies(query: String, page: Int) -> [MovieItem]?
+    func toggleRemoteAccess(with remote: NetworkAccess?)
+    func fetchMovie(query: String) -> [MovieItem]
+    func fetchMovies(query: String, page: Int, _ completion: MovieListCompletion)
     
 }
