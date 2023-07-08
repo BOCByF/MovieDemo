@@ -62,6 +62,14 @@ class MovieDetailsViewController: UIViewController, BaseViewControllerProtocol {
         self.reviewScoreLabel.text = viewModel.reviewScore
         self.reviewCountLabel.text = viewModel.reivewCount
         self.overviewLabel.text = viewModel.overview
+        let favouriteButtonImageName = viewModel.isFavourite ? "heart.fill" : "heart"
+        self.faviouriteButton.setImage(UIImage(systemName: favouriteButtonImageName), for: .normal)
     }
-
+    
+    @IBAction func onFavouriteButton(_ sender: Any) {
+        if let id = presetItemId {
+            logicController?.toggleFavourite(id: id)
+        }
+    }
+    
 }

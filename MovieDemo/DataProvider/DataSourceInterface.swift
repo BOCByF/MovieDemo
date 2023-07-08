@@ -20,11 +20,12 @@ struct MovieItem {
     let overview: String
 }
 
-
 protocol DataSourceInterface {
     func toggleRemoteAccess(with remote: NetworkAccess?)
     func fetchMovie(id: Int) -> [MovieItem]
     func fetchMovie(query: String) -> [MovieItem]
     func fetchMovies(query: String, page: Int, _ completion: @escaping MovieListCompletion)
+    func fetchFavourites() -> [Int]
+    func toggleFavourite(id: Int)
     
 }

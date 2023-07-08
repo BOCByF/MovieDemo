@@ -15,14 +15,16 @@ class MovieDetailsViewModel {
     var reviewScore: String = ""
     var reivewCount: String = ""
     var overview: String = ""
+    var isFavourite: Bool = false
     
-    func translate(item: MovieItem) {
+    func translate(item: MovieItem, favouriteList: [Int]) {
         imageUrl = URL(string: item.posterUrlString)
         title = item.title
         releaseDate = item.releaseDate
         reviewScore = "\(String(format: "%.1f", item.voteAverage)) / 10.0"
         reivewCount = "\(item.voteCount) Reviews"
         overview = item.overview
+        isFavourite = favouriteList.contains { $0 == item.id }
     }
 }
 
@@ -38,10 +40,16 @@ class MovieDetailsLogicController: BaseLogicControllerProtocol {
     }
     
     func loadMovie(id: Int) {
-        if let item = dataSource?.fetchMovie(id: id).first {
-            self.viewModel?.translate(item: item)
+        if let item = dataSource?.fetchMovie(id: id).first,
+           let favouriteList = dataSource?.fetchFavourites(){
+            self.viewModel?.translate(item: item, favouriteList: favouriteList)
             refresh(with: self.viewModel)
         }
+    }
+    
+    func toggleFavourite(id: Int) {
+        self.dataSource?.toggleFavourite(id: id)
+        loadMovie(id: id)
     }
     
     func refresh(with viewModel: MovieDetailsViewModel?) {

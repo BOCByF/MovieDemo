@@ -214,8 +214,8 @@
 		90CA7C1F2A557E7100E65D99 /* DataProvider */ = {
 			isa = PBXGroup;
 			children = (
-				90CA7C252A557F7A00E65D99 /* DataSourceImp.swift */,
 				90CA7C272A557FBE00E65D99 /* DataSourceInterface.swift */,
+				90CA7C252A557F7A00E65D99 /* DataSourceImp.swift */,
 			);
 			path = DataProvider;
 			sourceTree = "<group>";

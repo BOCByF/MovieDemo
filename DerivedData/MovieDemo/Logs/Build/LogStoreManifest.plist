@@ -754,6 +754,40 @@
 			<key>uniqueIdentifier</key>
 			<string>0DE93258-6B58-466C-8184-E4D2822D920B</string>
 		</dict>
+		<key>0F098B72-6826-43EF-BBBE-B919F5660AD3</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>0F098B72-6826-43EF-BBBE-B919F5660AD3.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MovieDemo project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MovieDemo</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build MovieDemo</string>
+			<key>timeStartedRecording</key>
+			<real>710466228.87844205</real>
+			<key>timeStoppedRecording</key>
+			<real>710466230.87820005</real>
+			<key>title</key>
+			<string>Build MovieDemo</string>
+			<key>uniqueIdentifier</key>
+			<string>0F098B72-6826-43EF-BBBE-B919F5660AD3</string>
+		</dict>
 		<key>0F8E688B-1FA5-4059-9C29-26370AC1ECD0</key>
 		<dict>
 			<key>className</key>
@@ -1332,6 +1366,40 @@
 			<key>uniqueIdentifier</key>
 			<string>15D0145A-CF9A-4395-94EA-4B32E50177DD</string>
 		</dict>
+		<key>161E9B3B-AC40-4A83-AEC2-7C55D2C09DF9</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>161E9B3B-AC40-4A83-AEC2-7C55D2C09DF9.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MovieDemo project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MovieDemo</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build MovieDemo</string>
+			<key>timeStartedRecording</key>
+			<real>710465638.44537604</real>
+			<key>timeStoppedRecording</key>
+			<real>710465638.76882505</real>
+			<key>title</key>
+			<string>Build MovieDemo</string>
+			<key>uniqueIdentifier</key>
+			<string>161E9B3B-AC40-4A83-AEC2-7C55D2C09DF9</string>
+		</dict>
 		<key>1788304F-B385-42D1-8182-F22D4544D930</key>
 		<dict>
 			<key>className</key>
@@ -1365,6 +1433,40 @@
 			<string>Build MovieDemo</string>
 			<key>uniqueIdentifier</key>
 			<string>1788304F-B385-42D1-8182-F22D4544D930</string>
+		</dict>
+		<key>17EC29DD-512C-4307-8A63-21F8CB54784D</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>17EC29DD-512C-4307-8A63-21F8CB54784D.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MovieDemo project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MovieDemo</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build MovieDemo</string>
+			<key>timeStartedRecording</key>
+			<real>710466075.83513105</real>
+			<key>timeStoppedRecording</key>
+			<real>710466076.17580295</real>
+			<key>title</key>
+			<string>Build MovieDemo</string>
+			<key>uniqueIdentifier</key>
+			<string>17EC29DD-512C-4307-8A63-21F8CB54784D</string>
 		</dict>
 		<key>180F0047-4116-42C3-A536-0E64DFC75309</key>
 		<dict>
@@ -3168,6 +3270,40 @@
 			<key>uniqueIdentifier</key>
 			<string>4590429D-D7E3-476E-BAB9-6F6F9699B8D2</string>
 		</dict>
+		<key>45B12547-FFDD-40F8-84A7-715CBDDFB306</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>45B12547-FFDD-40F8-84A7-715CBDDFB306.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MovieDemo project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MovieDemo</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build MovieDemo</string>
+			<key>timeStartedRecording</key>
+			<real>710467355.301566</real>
+			<key>timeStoppedRecording</key>
+			<real>710467356.87722504</real>
+			<key>title</key>
+			<string>Build MovieDemo</string>
+			<key>uniqueIdentifier</key>
+			<string>45B12547-FFDD-40F8-84A7-715CBDDFB306</string>
+		</dict>
 		<key>45DE5BF5-D9AD-4AEB-9802-B7695F07DD2A</key>
 		<dict>
 			<key>className</key>
@@ -3201,6 +3337,40 @@
 			<string>Build MovieDemo</string>
 			<key>uniqueIdentifier</key>
 			<string>45DE5BF5-D9AD-4AEB-9802-B7695F07DD2A</string>
+		</dict>
+		<key>464B027D-58F7-49CE-BC92-EC19E1EB1D9A</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>464B027D-58F7-49CE-BC92-EC19E1EB1D9A.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MovieDemo project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MovieDemo</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build MovieDemo</string>
+			<key>timeStartedRecording</key>
+			<real>710466257.75914705</real>
+			<key>timeStoppedRecording</key>
+			<real>710466258.87281299</real>
+			<key>title</key>
+			<string>Build MovieDemo</string>
+			<key>uniqueIdentifier</key>
+			<string>464B027D-58F7-49CE-BC92-EC19E1EB1D9A</string>
 		</dict>
 		<key>46ACC877-4F28-42C9-A160-1DA2FD8C8036</key>
 		<dict>
@@ -3541,6 +3711,40 @@
 			<string>Build MovieDemo</string>
 			<key>uniqueIdentifier</key>
 			<string>4B4D4CF0-A6EB-40EF-B52B-D2847E7C7471</string>
+		</dict>
+		<key>4C54F696-25E6-4612-B431-D8CF41097584</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>4C54F696-25E6-4612-B431-D8CF41097584.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MovieDemo project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MovieDemo</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build MovieDemo</string>
+			<key>timeStartedRecording</key>
+			<real>710466104.57586396</real>
+			<key>timeStoppedRecording</key>
+			<real>710466104.90241301</real>
+			<key>title</key>
+			<string>Build MovieDemo</string>
+			<key>uniqueIdentifier</key>
+			<string>4C54F696-25E6-4612-B431-D8CF41097584</string>
 		</dict>
 		<key>4D2B5841-6505-48DA-8781-BDB2F22898B9</key>
 		<dict>
@@ -4154,6 +4358,40 @@
 			<key>uniqueIdentifier</key>
 			<string>5C339172-3025-4B7B-8B2D-E9F742A92D03</string>
 		</dict>
+		<key>5F1739E9-A157-487F-A071-B18F32D532C7</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>5F1739E9-A157-487F-A071-B18F32D532C7.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MovieDemo project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MovieDemo</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build MovieDemo</string>
+			<key>timeStartedRecording</key>
+			<real>710467371.97726703</real>
+			<key>timeStoppedRecording</key>
+			<real>710467372.23428404</real>
+			<key>title</key>
+			<string>Build MovieDemo</string>
+			<key>uniqueIdentifier</key>
+			<string>5F1739E9-A157-487F-A071-B18F32D532C7</string>
+		</dict>
 		<key>5F2943AE-B2D8-4A7F-A992-507C067A2E22</key>
 		<dict>
 			<key>className</key>
@@ -4323,6 +4561,40 @@
 			<string>Build MovieDemo</string>
 			<key>uniqueIdentifier</key>
 			<string>622BB710-244A-4663-A2EC-294744CFDB5D</string>
+		</dict>
+		<key>62A66FC1-D1B2-4690-BBC6-90A4DC379C79</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>62A66FC1-D1B2-4690-BBC6-90A4DC379C79.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MovieDemo project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MovieDemo</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build MovieDemo</string>
+			<key>timeStartedRecording</key>
+			<real>710465657.53447294</real>
+			<key>timeStoppedRecording</key>
+			<real>710465658.57440102</real>
+			<key>title</key>
+			<string>Build MovieDemo</string>
+			<key>uniqueIdentifier</key>
+			<string>62A66FC1-D1B2-4690-BBC6-90A4DC379C79</string>
 		</dict>
 		<key>6337DE92-D97F-4440-9321-4ABB19455680</key>
 		<dict>
@@ -5208,6 +5480,40 @@
 			<key>uniqueIdentifier</key>
 			<string>771EAB92-A34F-4AE5-A28C-02AA4446CE50</string>
 		</dict>
+		<key>7B85DDBE-4BD6-4689-8DAD-D8188663E143</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>7B85DDBE-4BD6-4689-8DAD-D8188663E143.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MovieDemo project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MovieDemo</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build MovieDemo</string>
+			<key>timeStartedRecording</key>
+			<real>710465630.42035496</real>
+			<key>timeStoppedRecording</key>
+			<real>710465630.75309896</real>
+			<key>title</key>
+			<string>Build MovieDemo</string>
+			<key>uniqueIdentifier</key>
+			<string>7B85DDBE-4BD6-4689-8DAD-D8188663E143</string>
+		</dict>
 		<key>7B8FE546-E3CC-4571-99E6-9DB1343F3DC7</key>
 		<dict>
 			<key>className</key>
@@ -5514,6 +5820,40 @@
 			<key>uniqueIdentifier</key>
 			<string>84B47E4B-D38C-4F77-A4CC-82CDC2D656E4</string>
 		</dict>
+		<key>884F45A5-C7B9-4172-AE1F-46FE5E5BF7CF</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>884F45A5-C7B9-4172-AE1F-46FE5E5BF7CF.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MovieDemo project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MovieDemo</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build MovieDemo</string>
+			<key>timeStartedRecording</key>
+			<real>710466162.39799201</real>
+			<key>timeStoppedRecording</key>
+			<real>710466163.47720206</real>
+			<key>title</key>
+			<string>Build MovieDemo</string>
+			<key>uniqueIdentifier</key>
+			<string>884F45A5-C7B9-4172-AE1F-46FE5E5BF7CF</string>
+		</dict>
 		<key>886A8635-E510-4C48-BB1A-63928D99B788</key>
 		<dict>
 			<key>className</key>
@@ -5547,6 +5887,40 @@
 			<string>Build MovieDemo</string>
 			<key>uniqueIdentifier</key>
 			<string>886A8635-E510-4C48-BB1A-63928D99B788</string>
+		</dict>
+		<key>8907CA0A-97B9-4492-A80F-47595575211B</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>8907CA0A-97B9-4492-A80F-47595575211B.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MovieDemo project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MovieDemo</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build MovieDemo</string>
+			<key>timeStartedRecording</key>
+			<real>710465652.49945796</real>
+			<key>timeStoppedRecording</key>
+			<real>710465652.83597696</real>
+			<key>title</key>
+			<string>Build MovieDemo</string>
+			<key>uniqueIdentifier</key>
+			<string>8907CA0A-97B9-4492-A80F-47595575211B</string>
 		</dict>
 		<key>89094ACB-AC1C-43A8-936C-33D4A2D7BF60</key>
 		<dict>
@@ -6670,6 +7044,40 @@
 			<key>uniqueIdentifier</key>
 			<string>AB388512-29DB-4C03-90CC-6F733BB6165E</string>
 		</dict>
+		<key>ABCEDCF3-2757-4BE9-8F3F-568106818320</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>ABCEDCF3-2757-4BE9-8F3F-568106818320.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MovieDemo project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MovieDemo</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build MovieDemo</string>
+			<key>timeStartedRecording</key>
+			<real>710465007.51855099</real>
+			<key>timeStoppedRecording</key>
+			<real>710465009.27594495</real>
+			<key>title</key>
+			<string>Build MovieDemo</string>
+			<key>uniqueIdentifier</key>
+			<string>ABCEDCF3-2757-4BE9-8F3F-568106818320</string>
+		</dict>
 		<key>ADA66475-428E-4129-9F5F-97C8E09B76DB</key>
 		<dict>
 			<key>className</key>
@@ -6703,6 +7111,40 @@
 			<string>Build MovieDemo</string>
 			<key>uniqueIdentifier</key>
 			<string>ADA66475-428E-4129-9F5F-97C8E09B76DB</string>
+		</dict>
+		<key>ADCA4EF0-C585-477E-950B-C83ED0AC4251</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>ADCA4EF0-C585-477E-950B-C83ED0AC4251.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MovieDemo project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MovieDemo</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build MovieDemo</string>
+			<key>timeStartedRecording</key>
+			<real>710465620.84170496</real>
+			<key>timeStoppedRecording</key>
+			<real>710465621.39543998</real>
+			<key>title</key>
+			<string>Build MovieDemo</string>
+			<key>uniqueIdentifier</key>
+			<string>ADCA4EF0-C585-477E-950B-C83ED0AC4251</string>
 		</dict>
 		<key>AEE927C5-387B-4668-978B-38B3FBF2B5E7</key>
 		<dict>
@@ -7418,6 +7860,40 @@
 			<key>uniqueIdentifier</key>
 			<string>C430DE24-B5EA-4E55-94E3-38E6F6802A46</string>
 		</dict>
+		<key>C43E1E44-4B2E-43AF-9A40-4C48717FAA7B</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>C43E1E44-4B2E-43AF-9A40-4C48717FAA7B.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MovieDemo project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MovieDemo</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build MovieDemo</string>
+			<key>timeStartedRecording</key>
+			<real>710465442.04791903</real>
+			<key>timeStoppedRecording</key>
+			<real>710465444.74416399</real>
+			<key>title</key>
+			<string>Build MovieDemo</string>
+			<key>uniqueIdentifier</key>
+			<string>C43E1E44-4B2E-43AF-9A40-4C48717FAA7B</string>
+		</dict>
 		<key>C50B102F-D204-4C5C-8B5F-3FEA2983635A</key>
 		<dict>
 			<key>className</key>
@@ -7792,6 +8268,40 @@
 			<key>uniqueIdentifier</key>
 			<string>CD6C14D0-A248-40D4-BE46-6195F27C9946</string>
 		</dict>
+		<key>CE7898EC-26DC-46AB-9E12-F67FF3CF0B8A</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>CE7898EC-26DC-46AB-9E12-F67FF3CF0B8A.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MovieDemo project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MovieDemo</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build MovieDemo</string>
+			<key>timeStartedRecording</key>
+			<real>710467492.55660105</real>
+			<key>timeStoppedRecording</key>
+			<real>710467494.69188702</real>
+			<key>title</key>
+			<string>Build MovieDemo</string>
+			<key>uniqueIdentifier</key>
+			<string>CE7898EC-26DC-46AB-9E12-F67FF3CF0B8A</string>
+		</dict>
 		<key>CE7E3A5D-27A5-47F9-8448-84E16C61FC98</key>
 		<dict>
 			<key>className</key>
@@ -7894,6 +8404,40 @@
 			<key>uniqueIdentifier</key>
 			<string>D27E6571-DDAC-4CA4-A173-650682B3ADB2</string>
 		</dict>
+		<key>D2E41104-554C-4841-833F-C401881A2910</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>D2E41104-554C-4841-833F-C401881A2910.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MovieDemo project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MovieDemo</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build MovieDemo</string>
+			<key>timeStartedRecording</key>
+			<real>710466167.78217697</real>
+			<key>timeStoppedRecording</key>
+			<real>710466167.89179301</real>
+			<key>title</key>
+			<string>Build MovieDemo</string>
+			<key>uniqueIdentifier</key>
+			<string>D2E41104-554C-4841-833F-C401881A2910</string>
+		</dict>
 		<key>D3C22BEB-5C38-4059-93D2-7B54D41D5B60</key>
 		<dict>
 			<key>className</key>
@@ -7927,6 +8471,40 @@
 			<string>Clean MovieDemo</string>
 			<key>uniqueIdentifier</key>
 			<string>D3C22BEB-5C38-4059-93D2-7B54D41D5B60</string>
+		</dict>
+		<key>D41F7FE9-3E9D-4E0E-B015-80293BA6C1B3</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>D41F7FE9-3E9D-4E0E-B015-80293BA6C1B3.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MovieDemo project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MovieDemo</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build MovieDemo</string>
+			<key>timeStartedRecording</key>
+			<real>710466159.26372802</real>
+			<key>timeStoppedRecording</key>
+			<real>710466159.597525</real>
+			<key>title</key>
+			<string>Build MovieDemo</string>
+			<key>uniqueIdentifier</key>
+			<string>D41F7FE9-3E9D-4E0E-B015-80293BA6C1B3</string>
 		</dict>
 		<key>D42AC42F-CA21-4551-85AB-60AD1580DA40</key>
 		<dict>
@@ -8063,6 +8641,40 @@
 			<string>Build MovieDemo</string>
 			<key>uniqueIdentifier</key>
 			<string>D5B97749-1020-4E5E-AC04-A4C09A8DCB45</string>
+		</dict>
+		<key>D720AEEF-9A99-4F5C-A845-89FC8EDB4F50</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>D720AEEF-9A99-4F5C-A845-89FC8EDB4F50.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MovieDemo project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MovieDemo</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build MovieDemo</string>
+			<key>timeStartedRecording</key>
+			<real>710465959.62607503</real>
+			<key>timeStoppedRecording</key>
+			<real>710465960.68615305</real>
+			<key>title</key>
+			<string>Build MovieDemo</string>
+			<key>uniqueIdentifier</key>
+			<string>D720AEEF-9A99-4F5C-A845-89FC8EDB4F50</string>
 		</dict>
 		<key>D92AC5F6-5B0D-4E70-AB18-952B99E25D42</key>
 		<dict>
@@ -8947,6 +9559,40 @@
 			<string>Build MovieDemo</string>
 			<key>uniqueIdentifier</key>
 			<string>F211F1AD-E54D-4DE7-BEC7-6767E87EB628</string>
+		</dict>
+		<key>F25DC904-1F96-4B58-8A62-AC0711E803EE</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>F25DC904-1F96-4B58-8A62-AC0711E803EE.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MovieDemo project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MovieDemo</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build MovieDemo</string>
+			<key>timeStartedRecording</key>
+			<real>710465663.29658103</real>
+			<key>timeStoppedRecording</key>
+			<real>710465663.41525805</real>
+			<key>title</key>
+			<string>Build MovieDemo</string>
+			<key>uniqueIdentifier</key>
+			<string>F25DC904-1F96-4B58-8A62-AC0711E803EE</string>
 		</dict>
 		<key>F3F86F39-5D6A-4E30-8288-4557FAD797AE</key>
 		<dict>

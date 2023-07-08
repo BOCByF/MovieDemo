@@ -64,9 +64,11 @@ extension NetworkAccess {
         
         if let url = URL(string: urlString) {
             var request = URLRequest(url: url)
+            // HTTP Headers are unlikely to change
             request.httpMethod = "GET"
             request.addValue(bearerAuth, forHTTPHeaderField: "Authorization")
             request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+            
             return request
         }
         return nil
@@ -136,6 +138,7 @@ class DataSourceImp: DataSourceInterface {
     
     // Complete dataSource cache
     var cachedMovieList = [MovieItem]()
+    var cachedFavouriteList = [Int]()
     
     /// Depending on the restore point, preload data
     init(restore: CoreDataAccess?, network: NetworkAccess?) {
@@ -193,6 +196,21 @@ class DataSourceImp: DataSourceInterface {
         } else {
             completion(cachedList, nil)
         }
+    }
+    
+    func fetchFavourites() -> [Int] {
+        return cachedFavouriteList
+    }
+    
+    func toggleFavourite(id: Int) {
+        var favouriteList = self.cachedFavouriteList
+        let matchedIndex = favouriteList.firstIndex { $0 == id }
+        if let index = matchedIndex {
+            favouriteList.remove(at: index)
+        } else {
+            favouriteList.append(id)
+        }
+        self.cachedFavouriteList = favouriteList
     }
     
     //MARK: - Private helpers

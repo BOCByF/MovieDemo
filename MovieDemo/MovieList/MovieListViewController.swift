@@ -16,6 +16,7 @@ class MovieListCell: UITableViewCell {
     @IBOutlet var releaseDate: UILabel!
     @IBOutlet var reviewScore: UILabel!
     @IBOutlet var reviewCount: UILabel!
+    @IBOutlet var heartIcon: UIImageView!
     
     func refresh(with cellModel: MovieListCellModel) {
         posterImage.sd_imageIndicator = SDWebImageActivityIndicator.white
@@ -24,6 +25,7 @@ class MovieListCell: UITableViewCell {
         releaseDate.text = cellModel.releaseDate
         reviewScore.text = cellModel.reviewScore
         reviewCount.text = cellModel.reivewCount
+        heartIcon.isHidden = !cellModel.isFavourite
     }
 }
 
@@ -56,6 +58,7 @@ class MovieListViewController: UIViewController, BaseViewControllerProtocol {
         super.viewWillAppear(animated)
         searchBar.delegate = self
         
+        logicController?.refreshFavourites()
     }
     
     func navigate(info: MovieListNavigationInfo) {
@@ -82,7 +85,7 @@ class MovieListViewController: UIViewController, BaseViewControllerProtocol {
         self.movieResultLabel.isHidden = viewModel.cellModels.isEmpty
         self.emptyMessageLabel.isHidden = !viewModel.cellModels.isEmpty
         self.searchBar.text = viewModel.searchLabel
-        self.movieTableView.reloadData()
+        self.movieTableView.fixedPosReload()
     }
 
 }
@@ -119,6 +122,15 @@ extension MovieListViewController: UITableViewDelegate {
     }
 }
 
+/// Try the best to reload table while maintaining the scrolling postition
+extension UITableView {
+    func fixedPosReload() {
+        let contentOffset = self.contentOffset
+        self.reloadData()
+        self.layoutIfNeeded()
+        self.setContentOffset(contentOffset, animated: false)
+    }
+}
 
 
 
