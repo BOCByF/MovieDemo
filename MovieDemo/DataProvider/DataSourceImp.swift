@@ -132,6 +132,7 @@ class MockAccess: NetworkAccess {
 
 class DataSourceImp: DataSourceInterface {
     static let cacheExpiryThreshhold: Double = 120   // Cache expire in 120 seconds
+    static let cachePagingThreshhold: Int = 16
     
     var persistentStore: CoreDataAccess? = nil
     var networkSource: NetworkAccess? = nil
@@ -182,7 +183,7 @@ class DataSourceImp: DataSourceInterface {
     ///
     func fetchMovies(query: String, page: Int, _ completion: @escaping MovieListCompletion) {
         let cachedList = fetchMovie(query: query)
-        if isCacheExpired(cachedList), let networkSource = networkSource {
+        if isCacheExpired(cachedList, page: page), let networkSource = networkSource {
             networkSource.fetchMovieList(query: query, page: page) { list, errorMessage in
                 if let errorMessage = errorMessage {
                     completion(cachedList, errorMessage)
@@ -219,7 +220,9 @@ class DataSourceImp: DataSourceInterface {
     ///
     /// For simplicity, just check the first item's timestamp
     ///
-    private func isCacheExpired(_ cacheList: [MovieItem]) -> Bool {
+    private func isCacheExpired(_ cacheList: [MovieItem], page: Int) -> Bool {
+        let skipCount = max(0, DataSourceImp.cachePagingThreshhold * (page - 1))
+        let cacheList = cacheList.dropFirst(skipCount)
         if let first = cacheList.first {
             let timeDifference = Date().timeIntervalSince1970 - first.fetchTimestamp
             return timeDifference > DataSourceImp.cacheExpiryThreshhold

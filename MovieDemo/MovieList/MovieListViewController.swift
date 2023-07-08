@@ -10,6 +10,7 @@ import SDWebImage
 
 class MovieListCell: UITableViewCell {
     static let identifier = "identifier_movieListCell"
+    static let cellHeight:Double = 200.0
     
     @IBOutlet var posterImage: UIImageView!
     @IBOutlet var title: UILabel!
@@ -47,6 +48,8 @@ class MovieListViewController: UIViewController {
     var viewModel: MovieListViewModel?
     
     var navigationInfo: MovieListNavigationInfo? = nil
+    var cachedScrollIndex = 0
+    var pauseScrollListening = false
     
     func bind(logicController: Any) {
         self.movieListLogicController = logicController as? MovieListLogicController
@@ -88,7 +91,7 @@ class MovieListViewController: UIViewController {
         self.movieResultLabel?.isHidden = viewModel.cellModels.isEmpty
         self.emptyMessageLabel.isHidden = !viewModel.cellModels.isEmpty
         self.searchBar?.text = viewModel.searchLabel
-        self.movieTableView.fixedPosReload()
+        self.fixedPosReload(tableView: self.movieTableView)
     }
 
 }
@@ -96,6 +99,7 @@ class MovieListViewController: UIViewController {
 extension MovieListViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         self.view.endEditing(true)
+        self.movieTableView.contentOffset = CGPoint.zero
         logicController?.search(with: searchBar.text, page: 1)
     }
 }
@@ -123,15 +127,28 @@ extension MovieListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         logicController?.selectItem(index: indexPath.row)
     }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        guard !pauseScrollListening else { return }
+        
+        let contentOffsetY = self.movieTableView.contentOffset.y
+        let scrollIndex = Int((contentOffsetY / MovieListCell.cellHeight).rounded(.up))
+        if scrollIndex != cachedScrollIndex {
+            cachedScrollIndex = scrollIndex
+            logicController?.searchPaging(with: searchBar?.text, currentScrollIndex: scrollIndex)
+        }
+    }
 }
 
 /// Try the best to reload table while maintaining the scrolling postition
-extension UITableView {
-    func fixedPosReload() {
-        let contentOffset = self.contentOffset
-        self.reloadData()
-        self.layoutIfNeeded()
-        self.setContentOffset(contentOffset, animated: false)
+extension MovieListViewController {
+    func fixedPosReload(tableView: UITableView) {
+        self.pauseScrollListening = true
+        let contentOffset = tableView.contentOffset
+        tableView.reloadData()
+        tableView.layoutIfNeeded()
+        tableView.setContentOffset(contentOffset, animated: false)
+        self.pauseScrollListening = false
     }
 }
 

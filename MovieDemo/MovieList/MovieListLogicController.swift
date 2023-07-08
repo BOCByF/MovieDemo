@@ -41,11 +41,14 @@ enum MovieListNavigationInfo {
 }
 
 class MovieListLogicController: BaseLogicControllerProtocol {
+    static let pagingThreshold: Double = 16.0 * 0.7
+    
     var viewModel: MovieListViewModel?
     var viewController: MovieListViewController?
     var dataSource: DataSourceInterface?
     
     var cachedMovieItems = [MovieItem]()
+    var cachedPage = 1
     
     required init(viewModel: MovieListViewModel, viewController: MovieListViewController, dataSource: DataSourceInterface) {
         self.viewModel = viewModel
@@ -72,6 +75,16 @@ class MovieListLogicController: BaseLogicControllerProtocol {
             self.viewModel?.translate(searchLabel: query, movieItems: movieList, favouriteList: favouriteList)
             self.refresh(with: self.viewModel)
         })
+    }
+    
+    func searchPaging(with query: String?, currentScrollIndex: Int) {
+        var nextPage = Int((Double(currentScrollIndex) / MovieListLogicController.pagingThreshold).rounded(.up))
+        nextPage = max(1, nextPage)
+        if nextPage != cachedPage {
+            cachedPage = nextPage
+            search(with: query, page: nextPage)
+        }
+        Logger().debug("index: \(currentScrollIndex); page: \(nextPage)")
     }
     
     func selectItem(index: Int) {

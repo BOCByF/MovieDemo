@@ -22,6 +22,8 @@ class FavouriteListLogicController: MovieListLogicController {
         self.viewModel?.translate(searchLabel: nil, movieItems: self.cachedMovieItems, favouriteList: favouriteList)
         self.refresh(with: self.viewModel)
     }
+    
+    override func searchPaging(with query: String?, currentScrollIndex: Int) {}  // Disable paging
 }
 
 class FavouriteListViewController: MovieListViewController {
