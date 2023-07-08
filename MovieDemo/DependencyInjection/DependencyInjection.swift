@@ -33,8 +33,16 @@ class DependencyInjection {
         mockAccess = MockAccess()
     }
     
-    func bind(viewController: any BaseViewControllerProtocol) {
+    func bind(viewController: Any) {
         switch viewController {
+            case is FavouriteListViewController:
+                if let viewController = viewController as? FavouriteListViewController {
+                    let dataSource = getDataSource()
+                    let viewModel = MovieListViewModel()
+                    let logicController = FavouriteListLogicController(viewModel: viewModel, viewController: viewController, dataSource: dataSource)
+                    
+                    viewController.bind(logicController: logicController)
+                }
             case is MovieListViewController:
                 if let viewController = viewController as? MovieListViewController {
                     let dataSource = getDataSource()

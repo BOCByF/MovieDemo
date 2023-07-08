@@ -33,20 +33,23 @@ class MovieListCell: UITableViewCell {
 ///
 /// - LC: MovieListLogicController
 /// - VM: MovieListViewModel
-class MovieListViewController: UIViewController, BaseViewControllerProtocol {
-
-    @IBOutlet var searchBar: UISearchBar!
+class MovieListViewController: UIViewController {
+    @IBOutlet var searchBar: UISearchBar? = nil
     @IBOutlet var movieTableView: UITableView!
-    @IBOutlet var movieResultLabel: UILabel!
+    @IBOutlet var movieResultLabel: UILabel? = nil
     @IBOutlet var emptyMessageLabel: UILabel!
 
-    var logicController: MovieListLogicController?
+    private var movieListLogicController: MovieListLogicController? = nil
+    var logicController: MovieListLogicController? {
+        return movieListLogicController
+    }
+    
     var viewModel: MovieListViewModel?
     
     var navigationInfo: MovieListNavigationInfo? = nil
     
-    func bind(logicController: MovieListLogicController) {
-        self.logicController = logicController
+    func bind(logicController: Any) {
+        self.movieListLogicController = logicController as? MovieListLogicController
     }
     
     override func viewDidLoad() {
@@ -56,7 +59,7 @@ class MovieListViewController: UIViewController, BaseViewControllerProtocol {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        searchBar.delegate = self
+        searchBar?.delegate = self
         
         logicController?.refreshFavourites()
     }
@@ -82,9 +85,9 @@ class MovieListViewController: UIViewController, BaseViewControllerProtocol {
     
     func refreshView(with viewModel: MovieListViewModel) {
         self.viewModel = viewModel
-        self.movieResultLabel.isHidden = viewModel.cellModels.isEmpty
+        self.movieResultLabel?.isHidden = viewModel.cellModels.isEmpty
         self.emptyMessageLabel.isHidden = !viewModel.cellModels.isEmpty
-        self.searchBar.text = viewModel.searchLabel
+        self.searchBar?.text = viewModel.searchLabel
         self.movieTableView.fixedPosReload()
     }
 

@@ -13,7 +13,7 @@ import SDWebImage
 ///
 /// - LC: MovieDetailsLogicController
 /// - VM: MovieDetailsViewModel
-class MovieDetailsViewController: UIViewController, BaseViewControllerProtocol {
+class MovieDetailsViewController: UIViewController {
     @IBOutlet var posterImage: UIImageView!
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var releaseDateLabel: UILabel!
@@ -40,8 +40,8 @@ class MovieDetailsViewController: UIViewController, BaseViewControllerProtocol {
         shadowView.layer.insertSublayer(shadowGradientLayer, at: 0)
     }
     
-    func bind(logicController: MovieDetailsLogicController) {
-        self.logicController = logicController
+    func bind(logicController: Any) {
+        self.logicController = logicController as? MovieDetailsLogicController
     }
     
     override func viewWillAppear(_ animated: Bool) {

@@ -8,6 +8,17 @@
 import Foundation
 import UIKit
 
+protocol BaseLogicControllerProtocol {
+    associatedtype VC: Any
+    associatedtype VM: Any
+    
+    var viewModel: VM? { get }
+    var viewController: VC? { get }
+    var dataSource: DataSourceInterface? { get }
+    
+    init(viewModel: VM, viewController: VC, dataSource: DataSourceInterface)
+}
+
 class HomeNavController: UINavigationController {
     override var tabBarController: UITabBarController? {
         return viewControllers.first { $0  is UITabBarController }  as? UITabBarController
