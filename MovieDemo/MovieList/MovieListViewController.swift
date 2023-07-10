@@ -27,6 +27,8 @@ class MovieListCell: UITableViewCell {
         reviewScore.text = cellModel.reviewScore
         reviewCount.text = cellModel.reivewCount
         heartIcon.isHidden = !cellModel.isFavourite
+        
+        heartIcon.accessibilityIdentifier = "search:image:heart"
     }
 }
 
@@ -58,6 +60,13 @@ class MovieListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         SceneDelegate.shared?.dependencyInjection?.bind(viewController: self)
+        
+        setupAccessibilityIdentifiers()
+    }
+    
+    func setupAccessibilityIdentifiers() {
+        searchBar?.accessibilityIdentifier = "search:searchBar:searchBar"
+        emptyMessageLabel?.accessibilityIdentifier = "search:label:emptyMessage"
     }
     
     override func viewWillAppear(_ animated: Bool) {

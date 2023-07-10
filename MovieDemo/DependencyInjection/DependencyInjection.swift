@@ -23,8 +23,11 @@ class DependencyInjection {
     private var dataSource: DataSourceInterface?
     
     private var isOffline: Bool = false
-    // Debug setup
+    #if DEBUG
+    private var isMock = CommandLine.arguments.contains("isUITest")
+    #else
     private var isMock: Bool = false
+    #endif
     
     fileprivate init(defaultPresenter: UIViewController) {
         UniversalErrorHandler.shared.defaultPresenter = defaultPresenter

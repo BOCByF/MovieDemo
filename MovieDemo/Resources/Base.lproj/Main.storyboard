@@ -130,11 +130,11 @@
                                                                     <rect key="frame" x="0.0" y="0.0" width="206.33333333333334" height="40.666666666666664"/>
                                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </view>
-                                                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YLR-7Z-tlN">
+                                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="YLR-7Z-tlN">
                                                                     <rect key="frame" x="0.0" y="45.666666666666664" width="206.33333333333334" height="23.999999999999993"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Martian" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FNs-kx-ie9">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="182.33333333333334" height="24"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="178.33333333333334" height="24"/>
                                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                                                             <color key="textColor" name="AccentColor"/>
                                                                             <nil key="highlightedColor"/>
@@ -459,7 +459,6 @@
         <!--Favourites-->
         <scene sceneID="Yze-y2-yub">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="MxZ-wF-0WP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController title="Favourites" id="HUx-4B-f0V" customClass="FavouriteListViewController" customModule="MovieDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bdj-Ax-Krj">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
@@ -509,11 +508,11 @@
                                                                     <rect key="frame" x="0.0" y="0.0" width="206.33333333333334" height="40.666666666666664"/>
                                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </view>
-                                                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L2E-6m-sSq">
+                                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="L2E-6m-sSq">
                                                                     <rect key="frame" x="0.0" y="45.666666666666664" width="206.33333333333334" height="23.999999999999993"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Martian" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gzL-Cw-yyq">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="182.33333333333334" height="24"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="178.33333333333334" height="24"/>
                                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                                                             <color key="textColor" name="AccentColor"/>
                                                                             <nil key="highlightedColor"/>
@@ -630,6 +629,7 @@
                         <segue destination="LNB-2Q-qBV" kind="show" identifier="segue_show_details" id="hTr-lg-nxV"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MxZ-wF-0WP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="201" y="-202"/>
         </scene>
@@ -761,7 +761,7 @@
             <color red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="color_separator">
-            <color red="1" green="1" blue="1" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="1" blue="1" alpha="0.30000001192092896" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="color_text_secondary">
             <color red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
