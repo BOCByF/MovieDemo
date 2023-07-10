@@ -35,7 +35,7 @@ final class DataProviderTests: XCTestCase {
     
     func testGetMovie() throws {
         dataSource?.fetchMovies(query: "", page: 1, { itemList, error in
-            let matchedList = dataSource?.fetchMovie(query: "John Wick")
+            let matchedList = self.dataSource?.fetchMovie(query: "John Wick")
             XCTAssertFalse(matchedList?.isEmpty ?? true)
         })
     }
