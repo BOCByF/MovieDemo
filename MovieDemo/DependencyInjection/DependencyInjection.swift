@@ -23,12 +23,15 @@ class DependencyInjection {
     private var dataSource: DataSourceInterface?
     
     private var isOffline: Bool = false
+    // Debug setup
     private var isMock: Bool = false
     
     fileprivate init(defaultPresenter: UIViewController) {
         UniversalErrorHandler.shared.defaultPresenter = defaultPresenter
         
-        coreDataAccess = CoreDataAccess()
+        let managedContext = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext
+        coreDataAccess = CoreDataAccess(managedContext: managedContext)
+        self.isOffline = coreDataAccess.fetchSettingsOffline()
         networkAccess = NetworkAccess()
         mockAccess = MockAccess()
     }
@@ -56,6 +59,14 @@ class DependencyInjection {
                     let dataSource = getDataSource()
                     let viewModel = MovieDetailsViewModel()
                     let logicController = MovieDetailsLogicController(viewModel: viewModel, viewController: viewController, dataSource: dataSource)
+                    
+                    viewController.bind(logicController: logicController)
+                }
+            case is SettingsViewController:
+                if let viewController = viewController as? SettingsViewController {
+                    let dataSource = getDataSource()
+                    let viewModel = SettingsViewModel()
+                    let logicController = SettingsLogicController(viewModel: viewModel, viewController: viewController, dataSource: dataSource)
                     
                     viewController.bind(logicController: logicController)
                 }

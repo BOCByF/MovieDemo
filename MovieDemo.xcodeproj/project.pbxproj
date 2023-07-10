@@ -176,18 +176,17 @@
 		90CA7BEA2A54F15400E65D99 /* MovieDemo */ = {
 			isa = PBXGroup;
 			children = (
-				9077AC7F2A58227400932D6B /* Settings */,
 				90CA7C312A55835F00E65D99 /* UniversalErrorHandler */,
 				90CA7C2C2A55814900E65D99 /* DependencyInjection */,
+				90CA7C1F2A557E7100E65D99 /* DataProvider */,
 				9077AC7A2A57DF2C00932D6B /* Home */,
 				90CA7C212A557E9300E65D99 /* MovieDetails */,
 				90CA7C202A557E8600E65D99 /* MovieList */,
 				9077AC842A58E1B400932D6B /* FavouriteList */,
-				90CA7C1F2A557E7100E65D99 /* DataProvider */,
+				9077AC7F2A58227400932D6B /* Settings */,
 				90CA7BEB2A54F15400E65D99 /* AppDelegate.swift */,
 				90CA7BED2A54F15400E65D99 /* SceneDelegate.swift */,
 				90CA7BFC2A54F15500E65D99 /* Info.plist */,
-				90CA7BF42A54F15400E65D99 /* MovieDemo.xcdatamodeld */,
 				90CA7C222A557EA800E65D99 /* Resources */,
 				90CA7C1E2A55371E00E65D99 /* Mock */,
 			);
@@ -222,6 +221,7 @@
 		90CA7C1F2A557E7100E65D99 /* DataProvider */ = {
 			isa = PBXGroup;
 			children = (
+				90CA7BF42A54F15400E65D99 /* MovieDemo.xcdatamodeld */,
 				90CA7C272A557FBE00E65D99 /* DataSourceInterface.swift */,
 				90CA7C252A557F7A00E65D99 /* DataSourceImp.swift */,
 			);

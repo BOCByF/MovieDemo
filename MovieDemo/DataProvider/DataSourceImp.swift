@@ -6,19 +6,133 @@
 //
 
 import Foundation
+import CoreData
+import OSLog
 
 typealias MovieListCompletion = ([MovieItem], String?) -> Void
 
 class CoreDataAccess {
+    let managedContext: NSManagedObjectContext?
+    
+    init(managedContext: NSManagedObjectContext?) {
+        self.managedContext = managedContext
+    }
+    
     func fetchMovieList() -> [MovieItem] {
-        let movieList = [MovieItem]()
-        // TODO: Append movie items from CoreData
+        var movieList = [MovieItem]()
+        guard let context = managedContext else { return movieList }
+        do {
+            let movieDataList = try context.fetch(MovieDataItem.fetchRequest())
+            let list = movieDataList.map { item in
+                MovieItem(id: Int(item.id),
+                          title: item.title ?? "",
+                          fetchTimestamp: item.fetchTimestamp,
+                          releaseDate: item.releaseDate ?? "",
+                          posterUrlString: item.posterUrlString ?? "",
+                          voteAverage: item.voteAverage,
+                          voteCount: Int(item.voteCount),
+                          overview: item.overview ?? "")
+            }
+            movieList.append(contentsOf: list)
+        }
+        catch {
+            Logger().debug("\(error.localizedDescription)")
+        }
         return movieList
     }
     
-    func persist(list: [MovieItem]) {
-        // TODO: Update CoreData
+    func fetchFavouriteList() -> [Int] {
+        var favouriteList = [Int]()
+        guard let context = managedContext else { return favouriteList }
+        do {
+            let favouriteDataList = try context.fetch(FavouriteDataItem.fetchRequest())
+            let list = favouriteDataList.map { Int($0.id) }
+            favouriteList.append(contentsOf: list)
+        }
+        catch {
+            Logger().debug("\(error.localizedDescription)")
+        }
+        return favouriteList
     }
+    
+    func fetchSettingsOffline() -> Bool {
+        var isOffline = false
+        guard let context = managedContext else { return isOffline }
+        do {
+            if let settingsItem = try context.fetch(SettingsDataItem.fetchRequest()).first {
+                isOffline = settingsItem.isOfflineMode
+            }
+        }
+        catch {
+            Logger().debug("\(error.localizedDescription)")
+        }
+        return isOffline
+    }
+
+    // crash point to fix
+    func save(movieItemList: [MovieItem]) {
+        guard let context = managedContext else { return }
+        
+        let existingList = try? context.fetch(MovieDataItem.fetchRequest())
+        // Update existing or Add new
+        movieItemList.forEach { item in
+            let movieDataItem = existingList?.first { $0.id == item.id } ?? MovieDataItem(context: context)
+            movieDataItem.id = Int64(item.id)
+            movieDataItem.title = item.title
+            movieDataItem.fetchTimestamp = item.fetchTimestamp
+            movieDataItem.releaseDate = item.releaseDate
+            movieDataItem.posterUrlString = item.posterUrlString
+            movieDataItem.voteAverage = item.voteAverage
+            movieDataItem.voteCount = Int64(item.voteCount)
+            movieDataItem.overview = item.overview
+        }
+        do {
+            try context.save()
+        }
+        catch {
+            Logger().debug("\(error.localizedDescription)")
+        }
+    }
+    
+    func save(favouriteList: [Int]) {
+        guard let context = managedContext else { return }
+        
+        // Remove all
+        let existingList = try? context.fetch(FavouriteDataItem.fetchRequest())
+        existingList?.forEach { context.delete($0) }
+        
+        // Save new
+        let favouriteSet = Set(favouriteList)
+        favouriteSet.forEach { id in
+            let dataItem = FavouriteDataItem(context: context)
+            dataItem.id = Int64(id)
+        }
+        do {
+            try context.save()
+        }
+        catch {
+            Logger().debug("\(error.localizedDescription)")
+        }
+    }
+    
+    func save(isOfflineMode: Bool) {
+        guard let context = managedContext else { return }
+        
+        // Remove all
+        let existingList = try? context.fetch(SettingsDataItem.fetchRequest())
+        existingList?.forEach { context.delete($0) }
+        
+        // Save new
+        let dataItem = SettingsDataItem(context: context)
+        dataItem.isOfflineMode = isOfflineMode
+        do {
+            try context.save()
+        }
+        catch {
+            Logger().debug("\(error.localizedDescription)")
+        }
+    }
+    
 }
 
 class NetworkAccess {
@@ -42,8 +156,9 @@ class NetworkAccess {
                     completion(movieList, nil)
                 }
             }.resume()
+        } else {
+            completion(movieList, nil)
         }
-        completion(movieList, nil)
     }
 }
 
@@ -144,16 +259,16 @@ class DataSourceImp: DataSourceInterface {
     /// Depending on the restore point, preload data
     init(restore: CoreDataAccess?, network: NetworkAccess?) {
         persistentStore = restore
-        if let list = restore?.fetchMovieList() {
-            cachedMovieList = list
+        if let movieList = restore?.fetchMovieList() {
+            cachedMovieList = movieList
+        }
+        if let favouriteList = restore?.fetchFavouriteList() {
+            cachedFavouriteList = favouriteList
         }
         networkSource = network
     }
     
-    // Used by settings.offlineMode
-    func toggleRemoteAccess(with remote: NetworkAccess?) {
-        networkSource = remote
-    }
+    // Mark: - MovieList
     
     func fetchMovie(id: Int) -> [MovieItem] {
         return cachedMovieList.filter { item in
@@ -199,6 +314,7 @@ class DataSourceImp: DataSourceInterface {
         }
     }
     
+    // MARK: - Favourites
     func fetchFavourites() -> [Int] {
         return cachedFavouriteList
     }
@@ -212,6 +328,19 @@ class DataSourceImp: DataSourceInterface {
             favouriteList.append(id)
         }
         self.cachedFavouriteList = favouriteList
+        persistentStore?.save(favouriteList: favouriteList)
+    }
+    
+    // MARK: - Settings
+    func fetchSettingsOfflineMode() -> Bool {
+        let isOffline = persistentStore?.fetchSettingsOffline() ?? false
+        return isOffline
+    }
+    
+    func toggleRemoteAccess(with remote: NetworkAccess?) {
+        self.networkSource = remote
+        let isOffline = remote == nil ? true : false
+        self.persistentStore?.save(isOfflineMode: isOffline)
     }
     
     //MARK: - Private helpers
@@ -243,7 +372,7 @@ class DataSourceImp: DataSourceInterface {
     }
     
     func refreshPersistentStore(with list: [MovieItem]) {
-        persistentStore?.persist(list: list)
+        persistentStore?.save(movieItemList: list)
     }
     
 }

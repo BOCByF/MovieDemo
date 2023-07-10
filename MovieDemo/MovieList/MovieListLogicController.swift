@@ -84,7 +84,6 @@ class MovieListLogicController: BaseLogicControllerProtocol {
             cachedPage = nextPage
             search(with: query, page: nextPage)
         }
-        Logger().debug("index: \(currentScrollIndex); page: \(nextPage)")
     }
     
     func selectItem(index: Int) {

@@ -24,13 +24,28 @@ class HomeNavController: UINavigationController {
         return viewControllers.first { $0  is UITabBarController }  as? UITabBarController
     }
     
+    let offlineBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "desktopcomputer.trianglebadge.exclamationmark"), style: .plain, target: nil, action: #selector(HomeNavController.showSettingsTab(_:)))
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
         if let tabBarController = tabBarController {
             tabBarController.delegate = self
             tabBarController.navigationItem.title = tabBarController.viewControllers?[tabBarController.selectedIndex].navigationItem.title
+            
+            let isOfflineMode =  SceneDelegate.shared?.dependencyInjection?.getDataSource().fetchSettingsOfflineMode() ?? false
+            updateOfflineButton(show: isOfflineMode)
+            
         }
+    }
+    
+    func updateOfflineButton(show: Bool) {
+        tabBarController?.navigationItem.rightBarButtonItem = show ? offlineBarButtonItem : nil
+    }
+    
+    @objc
+    func showSettingsTab(_ sender: Any) {
+        tabBarController?.selectedViewController = tabBarController?.viewControllers?.last
     }
     
 }

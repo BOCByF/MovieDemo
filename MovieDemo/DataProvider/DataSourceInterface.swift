@@ -21,11 +21,14 @@ struct MovieItem {
 }
 
 protocol DataSourceInterface {
-    func toggleRemoteAccess(with remote: NetworkAccess?)
+    // MovieList
     func fetchMovie(id: Int) -> [MovieItem]
     func fetchMovie(query: String) -> [MovieItem]
     func fetchMovies(query: String, page: Int, _ completion: @escaping MovieListCompletion)
+    // Favourite
     func fetchFavourites() -> [Int]
     func toggleFavourite(id: Int)
-    
+    // Settings
+    func fetchSettingsOfflineMode() -> Bool
+    func toggleRemoteAccess(with remote: NetworkAccess?)
 }
