@@ -36,13 +36,16 @@ class SettingsLogicController: BaseLogicControllerProtocol {
     }
     
     func toggleOffline() {
-        cachedIsOffline = !cachedIsOffline
+        self.cachedIsOffline = !self.cachedIsOffline
         
-        SceneDelegate.shared?.dependencyInjection?.toggleDatasource(isOffline: cachedIsOffline)
+        SceneDelegate.shared?.dependencyInjection?.toggleDatasource(isOffline: self.cachedIsOffline)
         viewModel?.transalate(isOffline: self.cachedIsOffline)
         viewController?.refreshView(viewModel: viewModel)
         
-        (SceneDelegate.shared?.homeNavController as? HomeNavController)?.updateOfflineButton(show: cachedIsOffline)
+        (SceneDelegate.shared?.homeNavController as? HomeNavController)?.updateOfflineButton(show: self.cachedIsOffline)
+        
+        let notificationMessage = "Offline mode \(self.cachedIsOffline ? "enabled" : "disabled")"
+        UniversalErrorHandler.shared.handle(notificationMessage, style: .warning)
     }
 }
 

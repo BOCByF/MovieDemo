@@ -11,17 +11,24 @@ import Toast_Swift
 import OSLog
 
 class UniversalErrorHandler {
+    enum Style {
+        case warning
+        case error
+    }
+    
     static let shared: UniversalErrorHandler = UniversalErrorHandler()
     
     var defaultPresenter: UIViewController? = nil
     
     private init() {}
     
-    func handle(_ errorMessage: String, presenter: UIViewController? = nil) {
+    func handle(_ errorMessage: String, presenter: UIViewController? = nil, style: UniversalErrorHandler.Style = .error) {
         guard let presenter = presenter ?? defaultPresenter else {
             Logger().debug("\(String(describing: self)) found no presenter")
             return
         }
-        presenter.view.makeToast(errorMessage, duration: 3.0, position: .top)
+        var customStyle = ToastManager.shared.style
+        customStyle.backgroundColor = style == .error ? .systemRed : .systemYellow
+        presenter.view.makeToast(errorMessage, duration: 3.0, position: .top, style: customStyle)
     }
 }
