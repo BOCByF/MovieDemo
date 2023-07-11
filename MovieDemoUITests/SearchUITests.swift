@@ -72,7 +72,7 @@ final class SearchUITests: BaseUITestCase {
         waitTillAppear(element: searchKey)
         searchKey.tap()
         let elementsQuery = app!.otherElements
-        let matchedLabel = elementsQuery.staticTexts["Johnny"].firstMatch
+        let matchedLabel = elementsQuery.staticTexts["John Wick: Chapter 4"].firstMatch
         waitTillAppear(element: matchedLabel)
         matchedLabel.tap()
         let favouriteButton = app!.buttons["love"]

@@ -25,6 +25,7 @@ class DependencyInjection {
     private var isOffline: Bool = false
     #if DEBUG
     private var isMock = CommandLine.arguments.contains("isUITest")
+    private var clearLocalCache = CommandLine.arguments.contains("clearCoreData")
     #else
     private var isMock: Bool = false
     #endif
@@ -85,6 +86,12 @@ class DependencyInjection {
         if let isMock = isMock {
             self.isMock = isMock
         }
+        #if DEBUG
+        if clearLocalCache {
+            coreDataAccess.clearCoreData()
+        }
+        #endif
+        
         // Commit change
         _ = getDataSource()
     }

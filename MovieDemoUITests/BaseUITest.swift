@@ -10,7 +10,7 @@ import XCTest
 
 class BaseUITestCase: XCTestCase {
     var app: XCUIApplication? = XCUIApplication()
-    var launchArguments: [String] = ["isUITest"]
+    var launchArguments: [String] = ["isUITest", "clearCoreData"]
 
     override func setUpWithError() throws {
         continueAfterFailure = false

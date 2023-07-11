@@ -6,9 +6,7 @@
 //
 
 import Foundation
-//import Math
 
-// Mock
 struct MovieItem {
     let id: Int
     let title: String

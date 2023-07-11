@@ -18,6 +18,24 @@ class CoreDataAccess {
         self.managedContext = managedContext
     }
     
+    #if DEBUG
+    func clearCoreData() {
+        let deleteMovieRequest = NSBatchDeleteRequest(fetchRequest: MovieDataItem.fetchRequest())
+        let deleteFavouriteRequest = NSBatchDeleteRequest(fetchRequest: FavouriteDataItem.fetchRequest())
+        let deleteSettingsRequest = NSBatchDeleteRequest(fetchRequest: SettingsDataItem.fetchRequest())
+
+        do {
+            if let managedContext = managedContext {
+                try managedContext.persistentStoreCoordinator?.execute(deleteMovieRequest, with: managedContext)
+                try managedContext.persistentStoreCoordinator?.execute(deleteFavouriteRequest, with: managedContext)
+                try managedContext.persistentStoreCoordinator?.execute(deleteSettingsRequest, with: managedContext)
+            }
+        } catch {
+            Logger().debug("Unable to clear core data")
+        }
+    }
+    #endif
+    
     func fetchMovieList() -> [MovieItem] {
         var movieList = [MovieItem]()
         guard let context = managedContext else { return movieList }
